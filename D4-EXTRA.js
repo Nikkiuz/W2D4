@@ -17,7 +17,7 @@ const checkArray = function(arr){
         } else 
         console.log('Minore di 5')
 
-        const sum = randomNumber[i] > 5 + randomNumber[i]
+        const sum = (randomNumber[i] > 5) + randomNumber[i]
 
     return sum
 }
@@ -28,7 +28,6 @@ console.log(sum)
 
 
 
-}
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
