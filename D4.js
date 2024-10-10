@@ -39,10 +39,10 @@
 // const crazyDiff = function (n1){
 //     const result = n1-19
 //     if (n1>19){
-//         return  (3*(n1-19))
+//         return Math.abs(3*(n1-19))
        
 //         }
-//         else return result
+//         else return Math.abs(result)
 // }
 
 // const result = crazyDiff (7)
@@ -120,6 +120,20 @@
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
+// const upperfirst = function(longstr){
+
+//     const arrayOfWords = longstr.split(' ')
+//     for (let i = 0; i < arrayOfWords.length; i++) {
+//         arrayOfWords[i] = arrayOfWords[i].charAt(0).toUppercase() + arrayOfWords[i].slice(1, arrayOfWords[i].length)
+    
+        
+//     }
+//     const newString = arrayOfWords.join(' ')
+//     return newString
+
+// }
+
+// console.log(upperfirst('le funzioni sono bellissime'))
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
