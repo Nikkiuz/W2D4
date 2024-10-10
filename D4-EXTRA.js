@@ -6,27 +6,27 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const checkArray = function(arr){
-    const giveMeRandom = function (n){
-        const randomNumber = []
-         for (let i = 0; i < 10; i++) {
-         randomNumber.push(Math.ceil(Math.random() *10))
-     }
-        if (giveMeRandom(n) > 5){
-            console.log('Maggiore di 5')
-        } else 
-        console.log('Minore di 5')
+// const checkArray = function(arr){
+//     const giveMeRandom = function (n){
+//         const randomNumber = []
+//          for (let i = 0; i < 10; i++) {
+//          randomNumber.push(Math.ceil(Math.random() *10))
+//      }
+//         if (giveMeRandom(n) > 5){
+//             console.log('Maggiore di 5')
+//         } else 
+//         console.log('Minore di 5')
 
-        const sum = (randomNumber[i] > 5) + randomNumber[i]
+//         const sum = (randomNumber[i] > 5) + randomNumber
 
-    return sum
-}
-}
+//     return sum
+// }
+// }
 
-console.log(sum)
+// console.log(sum)
 
 
-
+// WTF??!
 
 
 /* EXTRA 2
@@ -36,6 +36,49 @@ console.log(sum)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const shoppingCart = [
+    {
+        price: 10,
+        name: 'broom',
+        id: 'broom1',
+        quantity: 10
+    },
+    {
+        price: 2,
+        name: 'water',
+        id: 'water1',
+        quantity: 100
+    },
+    {
+        price: 3,
+        name: 'coke',
+        id: 'coke1',
+        quantity: 50
+    },
+    {
+        price: 25,
+        name: 'blanket',
+        id: 'blanket1',
+        quantity: 10
+    }
+]
+
+const shoppingCartTotal = function (cart){
+
+    let total = 0
+    
+    for (let i = 0; i < cart.length; i++) {
+        
+        total += cart[i].price * cart[i].quantity
+    }
+        
+        return total
+    }
+
+    console.log("Totale dovuto:", shoppingCartTotal(shoppingCart))
+
+    
+ 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
