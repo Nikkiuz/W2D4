@@ -1,12 +1,34 @@
 // Esercizi aggiuntivi (facoltativi) per D4
 
 /* EXTRA 1
- Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
- se il suo valore è maggiore di 5 o no.
+ Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const checkArray = function(arr){
+    const giveMeRandom = function (n){
+        const randomNumber = []
+         for (let i = 0; i < 10; i++) {
+         randomNumber.push(Math.ceil(Math.random() *10))
+     }
+        if (giveMeRandom(n) > 5){
+            console.log('Maggiore di 5')
+        } else 
+        console.log('Minore di 5')
+
+        const sum = randomNumber[i] > 5 + randomNumber[i]
+
+    return sum
+}
+}
+
+console.log(sum)
+
+
+
+
+}
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
